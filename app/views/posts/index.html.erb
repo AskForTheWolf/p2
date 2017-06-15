@@ -1,0 +1,12 @@
+<!-- So it's literally the basic form. What is being displayed. -->
+<%= link_to "Create New Drink", new_post_path %>
+<section>
+  <% @posts.each do |post| %>
+    <article>
+      <h2><%= link_to post.title, post_path(post) %></h2>
+      <time>Updated <%= post.updated_at %></time>
+      <p><%= post.body %></p>
+      <p><%= post.glass %></p>
+    </article>
+  <% end %>
+</section>
