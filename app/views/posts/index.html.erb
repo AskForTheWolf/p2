@@ -6,6 +6,7 @@
       <h2><%= link_to post.title, post_path(post) %></h2>
       <time>Updated <%= post.updated_at %></time>
       <p><%= post.body %></p>
+      <!-- Might be redundant UI, but you might add text, "Served in:"-->
       <p><%= post.glass %></p>
     </article>
   <% end %>
